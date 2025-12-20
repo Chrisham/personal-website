@@ -100,8 +100,13 @@ body {
     color: var(--primary-color);
 }
 
-.nav-link:hover::after {
+.nav-link:hover::after,
+.nav-link.active::after {
     width: 100%;
+}
+
+.nav-link.active {
+    color: var(--primary-color);
 }
 
 .mobile-menu-toggle {
@@ -424,6 +429,20 @@ section {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* Custom Cursor */
+.cursor {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: width 0.2s, height 0.2s;
+    display: none; /* Hidden by default, can be enabled for desktop */
 }
 
 /* Responsive Design */
