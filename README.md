@@ -65,3 +65,5 @@ Typical Vercel settings:
 ## License
 
 All rights reserved unless you add a license.
+
+## Additional Hints
